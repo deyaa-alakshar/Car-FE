@@ -10,6 +10,7 @@
     --whitegreen: rgb(246, 180, 127);
     --light-color:#666;
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --box-shadow-light:0 .5rem 1rem var(--dark);
     --border:.1rem solid rgba(255, 255, 255, 0.1);
     --background:#fae5df;
     --darkBackground:#f5cac2;
@@ -285,7 +286,7 @@ section{
 
 .header.active{
     padding:2rem 9%;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-light);
 }
 
 #menu-btn{
@@ -318,7 +319,7 @@ section{
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     border:var(--border);
-    background: #fff;
+    background-color: var(--dark);
 }
 
 .login-form-container form .buttons{
@@ -741,6 +742,8 @@ section{
     border:var(--border);
     text-align: center;
     border-radius: .5rem;
+    background-color: var(--dark);
+
 }
 
 .contact .row form h3{

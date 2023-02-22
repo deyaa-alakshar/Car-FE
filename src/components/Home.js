@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs } from "swiper";
-import "swiper/swiper-bundle.css";
 
 import { UserContext } from "../App";
 import SwipeableTextMobileStepper from "./carousel";
