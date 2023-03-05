@@ -7,7 +7,7 @@ import Signup from "./components/Signup";
 import Dashboard from "./components/Dashboard";
 import AdminSignin from "./components/AdminSignin";
 import AdminSignout from "./components/AdminSignout";
-import Addbikes from "./components/dashboardComponents/Addbikes";
+import AddCars from "./components/dashboardComponents/AddCars";
 import Rentbikereports from "./components/dashboardComponents/Rentbikereports";
 import Availableusers from "./components/dashboardComponents/Availableusers";
 import Getrentbikes from "./components/dashboardComponents/Getrentbikes";
@@ -88,9 +88,9 @@ const App = () => {
           {" "}
           <Dashboard />{" "}
         </Route>
-        <Route path="/addbikes">
+        <Route path="/addCars">
           {" "}
-          <Addbikes />{" "}
+          <AddCars />{" "}
         </Route>
         <Route path="/rentbikesreports">
           {" "}
