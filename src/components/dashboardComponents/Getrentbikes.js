@@ -37,7 +37,16 @@ const Getrentbikes = () => {
       body: JSON.stringify({
         bikeIdFromDashBoard,
       }),
-    });
+    })
+      .then(async (res) => {
+        if (res.ok) {
+          const deletedCar = await res.json();
+          const cars = [...getBikes];
+          const filteredCars = cars.filter((_) => _._id != deletedCar._id);
+          setGetBikes(filteredCars);
+        }
+      })
+      .catch((e) => console.log(e));
   };
 
   const Loginbutton = () => {
