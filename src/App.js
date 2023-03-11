@@ -5,16 +5,7 @@ import Home from "./components/Home";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import Dashboard from "./components/Dashboard";
-import AdminSignin from "./components/AdminSignin";
-import AdminSignout from "./components/AdminSignout";
-import AddCars from "./components/dashboardComponents/AddCars";
-import Rentbikereports from "./components/dashboardComponents/Rentbikereports";
-import Availableusers from "./components/dashboardComponents/Availableusers";
-import Getrentbikes from "./components/dashboardComponents/Getrentbikes";
-import Mycart from "./components/Mycart";
-import Rentabike from "./components/Rentabike";
-import Rentbikecart from "./components/Rentbikecart";
-import Rentbikereviews from "./components/Rentbikereviews";
+
 import Signout from "./components/Signout";
 import ExploreRentBike from "./components/ExploreRentBike";
 
@@ -36,6 +27,7 @@ const App = () => {
 
   return (
     <>
+      <h1>test</h1>
       <UserContext.Provider value={{ state, dispatch }}>
         <Route exact path="/">
           {" "}
